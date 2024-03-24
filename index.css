@@ -1,0 +1,191 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100px;
+    margin: 0;
+    padding: 50px;
+    font:
+        16px Verdana,
+        sans-serif;
+    background: white;
+}
+#wrapper {
+    position: relative;
+}
+
+.branch {
+    position: relative;
+    margin-left: 250px;
+}
+
+.branch:before {
+    content: "";
+    width: 50px;
+    border-top: 2px solid black;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.entry {
+    position: relative;
+    min-height: 45px;
+}
+
+.entry:before {
+    content: "";
+    height: 100%;
+    border-left: 2px solid black;
+    position: absolute;
+    left: -50px;
+}
+
+.entry:after {
+    content: "";
+    width: 50px;
+    border-top: 2px solid black;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.entry:first-child:before {
+    width: 10px;
+    height: 50%;
+    top: 50%;
+    margin-top: 2px;
+    border-radius: 10px 0 0 0;
+}
+
+.entry:first-child:after {
+    height: 10px;
+    border-radius: 10px 0 0 0;
+}
+
+.entry:last-child:before {
+    width: 10px;
+    height: 50%;
+    border-radius: 0 0 0 10px;
+}
+
+.entry:last-child:after {
+    height: 10px;
+    border-top: none;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 0 10px;
+    margin-top: -9px;
+}
+
+.entry.sole:before {
+    display: none;
+}
+
+.entry.sole:after {
+    width: 50px;
+    height: 0;
+    margin-top: 1px;
+    border-radius: 0;
+}
+
+.research,
+.planning,
+.designing,
+.manufacturing,
+.sales {
+    display: block;
+    min-width: 150px;
+    padding: 5px 10px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    background-color: rgb(21 21 141);
+    color: white;
+    cursor: pointer;
+}
+.planning {
+    background-color: rgb(134 192 247);
+    color: black;
+}
+.designing {
+    background-color: rgb(225, 114, 54);
+    color: black;
+}
+.manufacturing {
+    color: black;
+    background-color: rgb(255, 142, 142);
+}
+.sales {
+    background-color: rgb(199, 142, 255);
+    color: black;
+}
+.root {
+    height: 10px;
+    width: 10px;
+    border: solid 2px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 9.9%;
+    top: 49.5%;
+}
+
+.entry2 {
+    position: relative;
+    min-height: 45px;
+}
+.entry2:after {
+    content: "";
+    width: 68%;
+    border-top: 2px solid black;
+    position: absolute;
+    left: -42px;
+    top: 17%;
+    margin-top: -18px;
+    -webkit-transform: rotate(-37deg);
+}
+.entry3 {
+    position: relative;
+    min-height: 45px;
+}
+.entry3:after {
+    content: "";
+    width: 66%;
+    border-top: 2px solid black;
+    position: absolute;
+    left: -41px;
+    top: 123%;
+    margin-top: 1px;
+    -webkit-transform: rotate(36deg);
+}
+.branch2 {
+    position: relative;
+    margin-left: 250px;
+}
+.branch2:before {
+    content: "";
+    width: 70px;
+    border-top: 2px solid black;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: 1px;
+}
+.research-details {
+    position: absolute;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
